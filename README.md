@@ -81,3 +81,24 @@ if __name__ == '__main__':
 
 Data inside the DynamoDB table inside AWS Console.
 
+# SQS & SNS
+
+Configuring SQS queue to handle messages from Python Scripts.
+
+One Queue created via Python script is as below.
+
+
+```
+import boto3
+
+sqs = boto3.client('sqs', region_name='us-east-1')
+
+queue = sqs.create_queue(QueueName='SQS_IDP_ADAPTER_QUEUE',  Attributes={
+                             'DelaySeconds': '60', 'MessageRetentionPeriod': '86400'
+                         })
+
+print('Queue URL: ', queue['QueueUrl'])
+```
+
+The above script will create the queue from SQS resource of boto3 package.
+We can verify the same in the AWS Console.
