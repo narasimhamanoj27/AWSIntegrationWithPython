@@ -5,6 +5,7 @@ dyn_resource = boto3.resource('dynamodb', region_name='us-east-1')
 idp_table = dyn_resource.Table('IdpCredentials')
 
 
+# This is for inserting data from the JSON data file.
 def insert_idp_table_data(idp_data):
     for idp_item in idp_data:
         api_name = (idp_item['api_name'])
