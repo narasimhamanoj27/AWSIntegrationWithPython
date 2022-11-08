@@ -16,7 +16,7 @@ def insert_idp_table_data(idp_data):
 
 
 if __name__ == '__main__':
-    with open("content/idp_data.json") as idp_data_json:
+    with open("../content/idp_data.json") as idp_data_json:
         idp_info = json.load(idp_data_json)
     insert_idp_table_data(idp_info)
     print('Table data inserted..')
