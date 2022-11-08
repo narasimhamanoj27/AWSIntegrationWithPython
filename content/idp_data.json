@@ -1,0 +1,12 @@
+[
+  {
+    "api_name": "WeatherAPI",
+    "idp_provider": "Octa",
+    "idp_url": "https://octa.dev.com/token"
+  },
+  {
+    "api_name": "GoogleMapsAPI",
+    "idp_provider": "Google",
+    "idp_url": "https://google.api.com/token"
+  }
+]
