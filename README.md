@@ -51,10 +51,6 @@ if __name__ == '__main__':
     print(f"Created table.")
 ```
 
-
-Screenshot for the table in AWS DynamoDB.
-
-[Image: Image.jpg]
 Data insertion from Python script using boto3 package from AWS.
 
 
@@ -85,4 +81,3 @@ if __name__ == '__main__':
 
 Data inside the DynamoDB table inside AWS Console.
 
-[Image: Image.jpg]
